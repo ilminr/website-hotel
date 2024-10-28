@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Black text color globally */
+    background-color: #f0f8ff; /* Light blue background for the whole page */
+}
+
+header {
+    background-image: url('hotel.webp'); /* URL gambar latar untuk header */
+    background-size: cover; /* Membuat gambar memenuhi seluruh header */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-position: center; /* Memposisikan gambar di tengah */
+    color: #000; /* Black text for header */
+    padding: 2em 1em;
+    text-align: center;
+    height: 200px; /* Tinggi header yang lebih besar */
+    position: relative; /* Membuat posisi relatif untuk nav absolute */
+    display: flex;
+    flex-direction: column; /* Mengatur konten vertikal di dalam header */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling untuk teks judul */
+header h1 {
+    font-size: 3em; /* Ukuran besar untuk teks "Welcome to Our Hotel" */
+    margin: 0; /* Hilangkan margin bawaan */
+    color: #000; /* Warna putih agar terlihat di atas background */
+}
+
+/* Styling untuk navigation */
+nav {
+    position: absolute;
+    bottom: 10px; /* Meletakkan navigasi di pinggir bawah header */
+    left: 50%; /* Memposisikan nav ke tengah secara horizontal */
+    transform: translateX(-50%); /* Menyelaraskan nav tepat di tengah */
+}
+
+nav a {
+    color: #000; /* Warna teks tautan */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em; /* Memperbesar teks tautan */
+}
+
+nav a:hover {
+    color: #4682b4; /* Warna teks saat hover */
+}
+
+footer {
+    background-color: #87cefa; /* Light Sky Blue */
+    color: #000; /* Black text for footer */
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.room-types {
+    text-align: center;
+    padding: 50px 20px; /* Ruang atas dan bawah yang cukup untuk section */
+}
+
+.room-types h2 {
+    font-size: 2.5em; /* Ukuran heading untuk section */
+    margin-bottom: 30px; /* Jarak bawah heading */
+}
+
+.room {
+    display: inline-block; /* Menyusun item secara horizontal */
+    width: 30%; /* Lebar setiap gambar kamar */
+    margin: 0 1%; /* Margin horizontal antar gambar */
+    vertical-align: top; /* Menyelaraskan gambar ke atas */
+    text-align: center; /* Mengatur teks di tengah */
+}
+
+.room-image {
+    width: 100%; /* Membuat gambar mengisi lebar div */
+    height: 200px; /* Menentukan tinggi gambar yang sama untuk semua */
+    object-fit: cover; /* Memastikan gambar terisi dengan baik dalam batas yang ditentukan */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+
+.room h3 {
+    font-size: 1.5em; /* Ukuran heading untuk tipe kamar */
+    margin: 10px 0; /* Jarak atas dan bawah */
+}
+
+.room p {
+    font-size: 1em; /* Ukuran teks deskripsi */
+    color: #555; /* Warna teks deskripsi */
+}
+
+
+.login-form,
+.booking {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e6f7ff; /* Very Light Blue background for form sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(135, 206, 250, 0.3); /* Soft shadow */
+    color: #000; /* Ensure black text in form sections */
+}
+
+.login-form h2,
+.booking h2 {
+    text-align: center;
+    color: #000; /* Black heading color */
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #000; /* Black label text */
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #87ceeb; /* Light Sky Blue border */
+    border-radius: 5px;
+    color: #000; /* Black text in form fields */
+}
+
+form button {
+    background-color: #4682b4; /* Steel Blue for button */
+    color: #fff; /* White text for button */
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5f9ea0; /* Cadet Blue on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #87ceeb; /* Light Sky Blue for table borders */
+    padding: 10px;
+    text-align: center;
+    color: #000; /* Black text in table */
+}
+
+th {
+    background-color: #87cefa; /* Light Sky Blue for table headers */
+    color: #000; /* Black text in table headers */
+}
